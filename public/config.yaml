@@ -1,0 +1,10 @@
+catch_rules:
+  - rule: _
+    transform_rules:
+      - search: _
+        replace:
+        - lab.dongsy.com.cn
+        - cloudpods.dongsy.com.cn
+      - search: \.html$
+          header:
+            Content-Type: text/html;charset=UTF-8 #修复标头
